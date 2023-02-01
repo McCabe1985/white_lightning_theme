@@ -29,26 +29,28 @@
 
         </div>
 
-        <aricle class="home-about-us-team-member-wrapper">
-            <div class="team-member-portrait-wrapper">
 
-                <button class="team-member-left-button"><img src="<?php echo get_theme_file_uri("/assets/images/svg/arrow-left.svg"); ?>" alt="left button" class="button-icon">
-                </button>
+        <?php ?>
 
-                <img src="" alt="" class="team-member-image">
-                <button class="team-member-right-button"><img src="<?php echo get_theme_file_uri("/assets/images/svg/arrow-right.svg"); ?>" alt="right button" class="button-icon"></button>
-            </div>
+        <?php
+        $count  = 0;
 
-            <div class="team-member-text-wrapper">
-                <p class="team-member-name">
-                    Jane Doe
-                </p>
-                <p class="team-member-title">JOB TITLE</p>
+        $teamMemberData = new WP_Query(array(
+            "posts_per_page" => 1,
+            "post_type" => "team_member"
+        ));
 
-                <a href="/" class="team-member-link">details</a>
-            </div>
+        while ($teamMemberData->have_posts()) {
+            $teamMemberData->the_post();
 
-        </aricle>
+            get_template_part('template-parts/homepage/about-us-section/team-member-card');
+        } ?>
+
+
     </div>
 
 </section>
+<!-- 
+get_template_part('template-parts/homepage/about-us-section/team-member-card');
+
+-->
