@@ -1,0 +1,32 @@
+@use "../utils/" as *;
+
+.section-three-container {
+  @include flexContainer(row);
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: black;
+  background-color: white;
+  .section-three-right-wrapper {
+    padding: 1rem;
+    width: 20rem;
+    .section-three-heading {
+      @include subHeading(black, 1.3rem, 900);
+      margin: 2rem auto;
+    }
+    .section-three-text {
+      @include primaryFont(black, 1rem, 400);
+      margin: 1rem auto;
+    }
+  }
+
+  .section-three-left-wrapper {
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    .section-three-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

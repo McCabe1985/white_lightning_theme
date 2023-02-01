@@ -1,0 +1,31 @@
+@use "../utils/" as *;
+
+.section-two-container {
+  @include flexContainer(row);
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: white;
+  .section-two-left-wrapper {
+    padding: 1rem;
+    width: 20rem;
+    .section-two-heading {
+      @include subHeading(white, 1.3rem, 900);
+      margin: 2rem auto;
+    }
+    .section-two-text {
+      @include primaryFont(white, 1rem, 400);
+      margin: 1rem auto;
+    }
+  }
+
+  .section-two-right-wrapper {
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+    .section-two-image {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

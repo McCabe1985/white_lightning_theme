@@ -1,0 +1,25 @@
+@use "../utils/" as *;
+
+.section-four-container {
+  @include flexContainer(column);
+  align-items: center;
+  justify-content: space-evenly;
+
+  .section-four-heading {
+    @include subHeading(white, 1.5rem, 900);
+    margin: 2rem auto;
+  }
+
+  .section-four-text-wrapper {
+    @include flexContainer(row);
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    @include primaryFont(white, 1rem, 400);
+    .section-four-text {
+      margin: 1.5rem auto;
+      width: 20rem;
+    }
+  }
+}

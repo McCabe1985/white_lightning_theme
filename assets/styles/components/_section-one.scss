@@ -1,0 +1,41 @@
+@use "../utils/" as *;
+
+.section-one {
+  background-color: white;
+  width: 100%;
+  min-height: 10rem;
+  @include flexContainer(column);
+  align-items: center;
+  justify-content: space-around;
+
+  .section-one-heading {
+    @include subHeading(black, 2rem, 700);
+    margin: 2rem 0;
+  }
+  .section-one-cards-wrapper {
+    @include flexContainer(row);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .section-one-card {
+      width: 20rem;
+      margin: 2rem;
+      @include flexContainer(column);
+      align-items: flex-start;
+      .section-one-card-img {
+        height: 8rem;
+        width: 8rem;
+        margin: 0 auto;
+      }
+      .section-one-card-heading {
+        margin: 2rem 0;
+        @include subHeading(black, 1.2rem, 700);
+      }
+      .section-one-text {
+        @include primaryFont(black, 1rem, 400);
+      }
+    }
+  }
+}
