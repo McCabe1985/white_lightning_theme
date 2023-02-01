@@ -30,21 +30,8 @@
         </div>
 
 
-        <?php ?>
+        <?php get_template_part('template-parts/homepage/about-us-section/team-member-card'); ?>
 
-        <?php
-        $count  = 0;
-
-        $teamMemberData = new WP_Query(array(
-            "posts_per_page" => 1,
-            "post_type" => "team_member"
-        ));
-
-        while ($teamMemberData->have_posts()) {
-            $teamMemberData->the_post();
-
-            get_template_part('template-parts/homepage/about-us-section/team-member-card');
-        } ?>
 
 
     </div>
