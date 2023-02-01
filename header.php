@@ -12,7 +12,7 @@
 <body>
     <nav class="nav-container">
         <a href="/" class="nav-logo-wrapper">
-            <img src="<?php echo get_theme_file_uri("/assets/images/svg/logo.svg"); ?>" height="38.7" width="38.7" alt="logo" class="nav-logo">
+            <img src="<?php echo get_theme_file_uri("/assets/images/svg/logo.svg"); ?>" height="38.090" width="181.270" alt="logo" class="nav-logo">
         </a>
 
         <?php

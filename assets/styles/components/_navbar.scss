@@ -10,7 +10,7 @@
   position: relative;
   overflow: hidden;
   .nav-logo-wrapper {
-    height: 90%;
+    height: 50%;
     margin-left: 1rem;
     .nav-logo {
       height: 100%;
@@ -68,7 +68,7 @@
 
 .menu-mobile-nav-menu-container {
   display: none;
-  background-color: black;
+  background-color: $primary-clr;
   width: 100%;
   min-height: 0.01rem;
   color: white;

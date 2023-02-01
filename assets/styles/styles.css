@@ -190,7 +190,7 @@ body {
   overflow: hidden;
 }
 .nav-container .nav-logo-wrapper {
-  height: 90%;
+  height: 50%;
   margin-left: 1rem;
 }
 .nav-container .nav-logo-wrapper .nav-logo {
@@ -257,7 +257,7 @@ body {
 
 .menu-mobile-nav-menu-container {
   display: none;
-  background-color: black;
+  background-color: #003760;
   width: 100%;
   min-height: 0.01rem;
   color: white;
