@@ -2,6 +2,7 @@
 <main class="site-content-container">
     <?php
     get_template_part('template-parts/homepage/hero');
+    get_template_part('template-parts/homepage/clients-section');
     get_template_part('template-parts/homepage/section-one');
     get_template_part('template-parts/homepage/section-two');
     get_template_part('template-parts/homepage/section-three');

@@ -10,7 +10,7 @@
 
   .hero-bg {
     @include parallaxBg;
-    background-image: url("../images/herobg.webp");
+    background-image: url("../images/svg/layered-waves.svg");
   }
 
   .hero-left-section {
@@ -25,14 +25,14 @@
     .hero-text-wrapper {
       padding: 1rem;
       .hero-heading {
-        @include heroFont(black, 3rem, 900);
+        @include heroFont(white, 3rem, 900);
         margin-bottom: 1.5rem;
         @include sm {
           font-size: 5rem;
         }
       }
       .hero-sub-text {
-        @include primaryFont(black, 1.2rem, 700);
+        @include primaryFont(white, 1.2rem, 700);
       }
     }
     .call-to-action-wrapper {
@@ -43,10 +43,6 @@
       .call-to-action {
         @include primaryButton(white, 1.3rem, 900);
         margin: 2rem auto 2rem 1rem;
-        &:hover,
-        &:focus {
-          color: black;
-        }
         @include md {
           font-size: 2rem;
         }

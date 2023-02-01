@@ -1,0 +1,28 @@
+@use "../utils/" as *;
+
+.clients-section-container {
+  display: none;
+  background-color: rgb(200, 200, 200);
+  width: 100%;
+  @include md {
+    @include flexContainer(column);
+  }
+  .clients-section-heading {
+    @include subHeading(black, 1.3rem, 900);
+    margin: 2rem auto;
+  }
+
+  .clients-logos-wrapper {
+    @include flexContainer(row);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 100%;
+    .client-logo {
+      height: 13rem;
+      width: 13rem;
+      margin: 0 1rem;
+    }
+  }
+}

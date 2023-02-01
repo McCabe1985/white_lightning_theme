@@ -15,7 +15,7 @@
     </div>
 
     <div class="hero-img-wrapper">
-        <img src="<?php echo get_theme_file_uri("/assets/images/svg/placeholder_black.svg"); ?>" height="38.7" width="38.7" alt="placeholder" class="hero-img">
+        <img src="<?php echo get_theme_file_uri("/assets/images/svg/rocket_hero.svg"); ?>" height="38.7" width="38.7" alt="placeholder" class="hero-img">
     </div>
 
 </header>
