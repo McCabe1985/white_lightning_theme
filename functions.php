@@ -20,6 +20,9 @@ add_action("after_setup_theme", 'whitelightning_features');
 function whitelightning_post_types()
 {
     register_post_type("team_member", array(
+        "rewrite" => array(
+            "slug" => "meet_the_team"
+        ),
         "public" => true,
         "labels" => array(
             "name" => "Team Member"
