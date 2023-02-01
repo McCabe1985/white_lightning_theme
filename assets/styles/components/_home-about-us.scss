@@ -1,0 +1,111 @@
+@use "../utils/" as *;
+
+.home-about-us-container {
+  @include flexContainer(column);
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(200, 200, 200);
+
+  .home-about-us-heading {
+    @include subHeading(black, 1.3rem, 900);
+    margin: 2rem 0;
+  }
+
+  .home-about-us-content-wrapper {
+    @include flexContainer(row);
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 4rem;
+    .home-about-us-text-wrapper {
+      @include flexContainer(row);
+      justify-content: space-evenly;
+      align-items: center;
+      flex-wrap: wrap;
+      @include lg {
+        width: 50%;
+      }
+
+      .home-about-us-card-wrapper {
+        @include flexContainer(column);
+        justify-content: space-evenly;
+        align-items: flex-start;
+        @include md {
+          width: 40%;
+        }
+
+        margin: 1rem;
+        .home-about-us-icon {
+          height: 5rem;
+          width: 5rem;
+        }
+        .home-about-us-card-heading {
+          @include subHeading(black, 1rem, 700);
+          margin: 0.5rem 0;
+        }
+        .home-about-us-card-text {
+          @include primaryFont(black, 1rem, 300);
+        }
+      }
+    }
+    .home-about-us-team-member-wrapper {
+      display: none;
+      @include lg {
+        @include flexContainer(column);
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        width: 20rem;
+        height: 30rem;
+      }
+
+      .team-member-portrait-wrapper {
+        width: 100%;
+        height: 20rem;
+        position: relative;
+        .team-member-left-button {
+          height: 3rem;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.5);
+          left: 0;
+          bottom: 40%;
+          padding: 0.5rem;
+          &:hover {
+            padding: 0.4rem;
+          }
+        }
+        .team-member-right-button {
+          height: 3rem;
+          position: absolute;
+          background-color: rgba(0, 0, 0, 0.5);
+          right: 0;
+          bottom: 40%;
+          padding: 0.5rem;
+          &:hover {
+            padding: 0.4rem;
+          }
+        }
+        .button-icon {
+          height: 100%;
+        }
+      }
+      .team-member-text-wrapper {
+        @include flexContainer(column);
+        justify-content: space-evenly;
+        align-items: center;
+        height: 30%;
+        .team-member-name {
+          @include primaryFont(black, 1.4rem, 700);
+        }
+        .team-member-title {
+          @include primaryFont(#6aa5c0, 1rem, 300);
+        }
+        .team-member-link {
+          @include primaryButton(white, 1.2rem, 700);
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@use "../utils/" as *;
+
+.services-container {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  min-height: 10rem;
+  @include flexContainer(column);
+  align-items: center;
+  justify-content: space-around;
+
+  .services-heading {
+    @include subHeading(black, 2rem, 700);
+    margin: 2rem 0;
+  }
+  .services-cards-wrapper {
+    @include flexContainer(row);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+    .service-card {
+      width: 20rem;
+      margin: 2rem;
+      @include flexContainer(column);
+      align-items: center;
+      .service-card-img {
+        height: 8rem;
+        width: 8rem;
+        margin: 0 auto;
+      }
+      .service-card-heading {
+        margin: 2rem 0;
+        @include subHeading(black, 1.2rem, 700);
+      }
+      .service-text {
+        @include primaryFont(black, 1rem, 400);
+        text-align: center;
+      }
+    }
+  }
+}

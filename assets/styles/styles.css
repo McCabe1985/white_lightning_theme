@@ -462,8 +462,8 @@ body {
   margin: 0 1rem;
 }
 
-.section-one {
-  background-color: white;
+.services-container {
+  background-color: rgb(240, 240, 240);
   width: 100%;
   min-height: 10rem;
   display: flex;
@@ -473,7 +473,7 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.section-one .section-one-heading {
+.services-container .services-heading {
   color: black;
   font-family: "RobotoSlab-VariableFont", Georgia, serif;
   font-size: 2rem;
@@ -481,7 +481,7 @@ body {
   text-transform: uppercase;
   margin: 2rem 0;
 }
-.section-one .section-one-cards-wrapper {
+.services-container .services-cards-wrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -491,21 +491,21 @@ body {
   flex-wrap: wrap;
   width: 100%;
 }
-.section-one .section-one-cards-wrapper .section-one-card {
+.services-container .services-cards-wrapper .service-card {
   width: 20rem;
   margin: 2rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  align-items: flex-start;
+  align-items: center;
 }
-.section-one .section-one-cards-wrapper .section-one-card .section-one-card-img {
+.services-container .services-cards-wrapper .service-card .service-card-img {
   height: 8rem;
   width: 8rem;
   margin: 0 auto;
 }
-.section-one .section-one-cards-wrapper .section-one-card .section-one-card-heading {
+.services-container .services-cards-wrapper .service-card .service-card-heading {
   margin: 2rem 0;
   color: black;
   font-family: "RobotoSlab-VariableFont", Georgia, serif;
@@ -513,127 +513,190 @@ body {
   font-weight: 700;
   text-transform: uppercase;
 }
-.section-one .section-one-cards-wrapper .section-one-card .section-one-text {
+.services-container .services-cards-wrapper .service-card .service-text {
   color: black;
   font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   text-align: left;
+  text-align: center;
 }
 
-.section-two-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  overflow-x: hidden;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  color: white;
-}
-.section-two-container .section-two-left-wrapper {
-  padding: 1rem;
-  width: 20rem;
-}
-.section-two-container .section-two-left-wrapper .section-two-heading {
-  color: white;
-  font-family: "RobotoSlab-VariableFont", Georgia, serif;
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 2rem auto;
-}
-.section-two-container .section-two-left-wrapper .section-two-text {
-  color: white;
-  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  margin: 1rem auto;
-}
-.section-two-container .section-two-right-wrapper {
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-}
-.section-two-container .section-two-right-wrapper .section-two-image {
-  height: 100%;
-  width: 100%;
-}
-
-.section-three-container {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  overflow-x: hidden;
-  align-items: center;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  color: black;
-  background-color: white;
-}
-.section-three-container .section-three-right-wrapper {
-  padding: 1rem;
-  width: 20rem;
-}
-.section-three-container .section-three-right-wrapper .section-three-heading {
-  color: black;
-  font-family: "RobotoSlab-VariableFont", Georgia, serif;
-  font-size: 1.3rem;
-  font-weight: 900;
-  text-transform: uppercase;
-  margin: 2rem auto;
-}
-.section-three-container .section-three-right-wrapper .section-three-text {
-  color: black;
-  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  text-align: left;
-  margin: 1rem auto;
-}
-.section-three-container .section-three-left-wrapper {
-  width: 20rem;
-  height: 20rem;
-  margin: 2rem;
-}
-.section-three-container .section-three-left-wrapper .section-three-image {
-  height: 100%;
-  width: 100%;
-}
-
-.section-four-container {
+.home-about-us-container {
   display: flex;
   align-items: center;
   flex-direction: column;
   overflow-x: hidden;
-  align-items: center;
   justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(200, 200, 200);
 }
-.section-four-container .section-four-heading {
-  color: white;
+.home-about-us-container .home-about-us-heading {
+  color: black;
   font-family: "RobotoSlab-VariableFont", Georgia, serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin: 2rem auto;
+  margin: 2rem 0;
 }
-.section-four-container .section-four-text-wrapper {
+.home-about-us-container .home-about-us-content-wrapper {
   display: flex;
   align-items: center;
   flex-direction: row;
   overflow-x: hidden;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: space-between;
+  width: 90%;
+  margin-bottom: 4rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  align-items: center;
   flex-wrap: wrap;
-  width: 100%;
-  color: white;
+}
+@media (min-width: 60rem) {
+  .home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper {
+    width: 50%;
+  }
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper .home-about-us-card-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin: 1rem;
+}
+@media (min-width: 45rem) {
+  .home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper .home-about-us-card-wrapper {
+    width: 40%;
+  }
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper .home-about-us-card-wrapper .home-about-us-icon {
+  height: 5rem;
+  width: 5rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper .home-about-us-card-wrapper .home-about-us-card-heading {
+  color: black;
+  font-family: "RobotoSlab-VariableFont", Georgia, serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-text-wrapper .home-about-us-card-wrapper .home-about-us-card-text {
+  color: black;
   font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   text-align: left;
 }
-.section-four-container .section-four-text-wrapper .section-four-text {
-  margin: 1.5rem auto;
-  width: 20rem;
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper {
+  display: none;
+}
+@media (min-width: 60rem) {
+  .home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    overflow-x: hidden;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 20rem;
+    height: 30rem;
+  }
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper {
+  width: 100%;
+  height: 20rem;
+  position: relative;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper .team-member-left-button {
+  height: 3rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  bottom: 40%;
+  padding: 0.5rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper .team-member-left-button:hover {
+  padding: 0.4rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper .team-member-right-button {
+  height: 3rem;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  right: 0;
+  bottom: 40%;
+  padding: 0.5rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper .team-member-right-button:hover {
+  padding: 0.4rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-portrait-wrapper .button-icon {
+  height: 100%;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  overflow-x: hidden;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30%;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-name {
+  color: black;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: left;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-title {
+  color: #6aa5c0;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link {
+  color: white;
+  font-family: "RobotoFlex-VariableFont", Tahoma, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.5em 1.5em;
+  background-color: #e1341e;
+  border-radius: 5rem;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  margin-top: 1rem;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em 1.5em;
+  transform: translateX(-410px);
+  transition: all ease-in-out 1.5s;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link:hover, .home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link:focus {
+  -webkit-animation: shadowPulse linear 3s infinite 0s forwards;
+          animation: shadowPulse linear 3s infinite 0s forwards;
+}
+.home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link:hover::before, .home-about-us-container .home-about-us-content-wrapper .home-about-us-team-member-wrapper .team-member-text-wrapper .team-member-link:focus::before {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: btnSlideRight linear 0.5s 0s forwards;
+          animation: btnSlideRight linear 0.5s 0s forwards;
 }/*# sourceMappingURL=styles.css.map */
